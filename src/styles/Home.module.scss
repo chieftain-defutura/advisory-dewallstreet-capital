@@ -1,0 +1,74 @@
+.home {
+  .tagline {
+    // background: url(../public/images/taglineIllustration.png);
+    background-size: cover;
+    padding: 6.4rem;
+    position: relative;
+
+    @media (max-width: 600px) {
+      padding: 6.4rem 2rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 25%;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+    }
+
+    .tagline_abstract {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        // background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+      }
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &_wrapper {
+      min-height: 60rem;
+      display: grid;
+      place-items: flex-end;
+      text-align: end;
+
+      h3 {
+        font-size: 4.8rem;
+        line-height: 1.2;
+        color: var(--text-primary);
+
+        @media (max-width: 600px) {
+          font-size: 3rem;
+        }
+      }
+      p {
+        font-size: 9.6rem;
+        line-height: 1;
+        font-weight: normal;
+        font-family: "grold-regular";
+        white-space: nowrap;
+
+        @media (max-width: 600px) {
+          font-size: 5rem;
+        }
+      }
+    }
+  }
+}

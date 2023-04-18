@@ -1,0 +1,156 @@
+.advisory_bg_img {
+  background-image: url(../../public/assets/images/advisory-bg-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: auto;
+
+  @media (max-width: 920px) {
+    background-image: url(../../public/assets/images/advisory-rwd.png);
+    padding: 0;
+    height: 100vh;
+  }
+  // .advisory_logo {
+  //   position: absolute;
+  //   top: 32px;
+  //   left: 64px;
+  // }
+  .advisory {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 64px;
+
+    @media (max-width: 920px) {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 150px;
+      align-items: normal;
+      justify-content: space-between;
+    }
+
+    p {
+      padding: 400px 70px 50px 70px;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: #f5f5f5;
+      text-align: center;
+
+      @media (max-width: 920px) {
+        // background-image: url(../../public/assets/images/advisory-rwd.png);
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        font-size: 18px;
+        padding: 500px 50px 100px 50px;
+      }
+      @media (max-width: 720px) {
+        padding: 350px 50px 30px 50px;
+        font-size: 14px;
+      }
+      @media (max-width: 520px) {
+        padding: 256px 18px 10px 22px;
+        font-size: 12px;
+        line-height: 16px;
+      }
+      @media (max-width: 390px) {
+        padding: 256px 32px 10px 32px;
+        font-size: 10px;
+        line-height: 16px;
+      }
+    }
+    .signup {
+      // margin: 100px 64px;
+      padding: 32px 64px;
+
+      background: rgba(30, 30, 30, 0.16);
+      backdrop-filter: blur(12px);
+      @media (max-width: 920px) {
+        margin: 0;
+        background-image: url(../../public/assets/images/advisory-rwd-bg-blur.png);
+        backdrop-filter: blur(8px);
+      }
+      .signup_info {
+        h2 {
+          padding-bottom: 24px;
+          font-size: 22px;
+          line-height: 26px;
+          font-weight: 700;
+          letter-spacing: 0.12em;
+          @media (max-width: 920px) {
+            text-align: center;
+          }
+        }
+        h6 {
+          font-family: var(--font-light);
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 16px;
+          padding-bottom: 8px;
+          @media (max-width: 920px) {
+            text-align: center;
+          }
+        }
+        .mail {
+          display: flex;
+          gap: 8px;
+          padding-bottom: 18px;
+          align-items: center;
+          width: 100%;
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          padding: 16px;
+          margin-bottom: 18px;
+        }
+        input {
+          background: none;
+          border: none;
+          outline: none;
+          max-width: 100%;
+          color: #fff;
+          width: 180px;
+          @media (max-width: 550px) {
+            width: 100%;
+            max-width: 100px;
+          }
+        }
+        select {
+          border: none;
+          background: transparent;
+          color: #7777;
+          outline: none;
+          width: 100%;
+          @media (max-width: 550px) {
+            width: 100%;
+            max-width: 100px;
+          }
+        }
+        .login_info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 8px;
+          padding-bottom: 18px;
+          .personal_detials {
+            display: flex;
+            gap: 8px;
+            padding: 16px;
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+          }
+        }
+        .signup_btn {
+          button {
+            font-family: var(--font-light);
+            padding: 16px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  input {
+    font-family: var(--font-light);
+  }
+}

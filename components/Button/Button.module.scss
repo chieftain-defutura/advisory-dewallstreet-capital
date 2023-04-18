@@ -1,0 +1,42 @@
+%base-styles {
+  outline: none;
+  border: none;
+  font-weight: 400;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+  border-radius: 3px;
+
+  &:disabled {
+    cursor: no-drop;
+    opacity: 0.7;
+  }
+}
+
+.btnPrimary {
+  @extend %base-styles;
+  padding: 16px 32px;
+  font-size: 16px;
+  background: #00ce53;
+  color: #ffffff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.btnSecondary {
+  @extend %base-styles;
+  padding: 8px 32px;
+  background: #02d4f8;
+  color: #ffffff;
+  font-size: 16px;
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.1));
+}
+
+.btnError {
+  @extend %base-styles;
+  background-color: tomato;
+  color: var(--text-primary);
+  box-shadow: 0px 4px 10px rgba(255, 99, 71, 0.25);
+  padding: 0.8rem;
+}
