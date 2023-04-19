@@ -29,9 +29,6 @@
       @media (max-width: 1024px) {
         padding: 32px;
       }
-      @media (max-width: 425px) {
-        padding: 32px 22px;
-      }
     }
 
     p {
@@ -69,6 +66,9 @@
       }
       @media (max-width: 543px) {
         padding: 32px;
+      }
+      @media (max-width: 425px) {
+        padding: 32px 22px;
       }
       .signup_info {
         h2 {
