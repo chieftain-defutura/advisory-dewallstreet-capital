@@ -10,6 +10,7 @@ import Company from "../../public/assets/icons/company.svg";
 import styles from "./Advisory.module.scss";
 import Button from "../Button";
 import Image from "next/image";
+import Link from "next/link";
 
 const Advisory: React.FC = () => {
   return (
@@ -19,7 +20,9 @@ const Advisory: React.FC = () => {
           <div className={styles.advisory}>
             <div className={styles.advisory_content}>
               <div className={styles.advisory_logo}>
-                <Image src={Logo} alt="" />
+                <Link href="/">
+                  <Image src={Logo} alt="" />
+                </Link>
               </div>
               <div>
                 <p>
