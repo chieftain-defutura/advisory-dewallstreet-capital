@@ -21,7 +21,12 @@ const Advisory: React.FC = () => {
             <div className={styles.advisory_content}>
               <div className={styles.advisory_logo}>
                 <Link href="/">
-                  <Image src={Logo} alt="" />
+                  <Image
+                    src={Logo}
+                    alt=""
+                    layout="fill"
+                    className={styles.image}
+                  />
                 </Link>
               </div>
               <div>
@@ -55,16 +60,28 @@ const Advisory: React.FC = () => {
                           <div className={styles.login_info}>
                             <div className={styles.personal_detials}>
                               <Image src={User} alt="" width={20} height={20} />
-                              <Field name="name" placeholder="First name" />
+                              <Field
+                                name="name"
+                                placeholder="First name"
+                                type="text"
+                              />
                             </div>
                             <div className={styles.personal_detials}>
                               <Image src={User} alt="" width={20} height={20} />
-                              <Field name="lastName" placeholder="Last name" />
+                              <Field
+                                name="lastName"
+                                placeholder="Last name"
+                                type="text"
+                              />
                             </div>
                           </div>
                           <div className={styles.mail}>
                             <Image src={Mail} alt="" width={20} height={20} />
-                            <Field name="email" placeholder="Mail" />
+                            <Field
+                              name="email"
+                              placeholder="Mail"
+                              type="mail"
+                            />
                           </div>
                           <div className={styles.login_info}>
                             <div className={styles.personal_detials}>
@@ -106,7 +123,11 @@ const Advisory: React.FC = () => {
                                 width={20}
                                 height={20}
                               />
-                              <Field name="number" placeholder="Phone" />
+                              <Field
+                                name="number"
+                                placeholder="Phone"
+                                type="number"
+                              />
                             </div>
                           </div>
                           <h6>Optional</h6>
@@ -121,6 +142,7 @@ const Advisory: React.FC = () => {
                               <Field
                                 name="designation"
                                 placeholder="Designation"
+                                type="text"
                               />
                             </div>
                             <div className={styles.personal_detials}>
@@ -130,7 +152,11 @@ const Advisory: React.FC = () => {
                                 width={20}
                                 height={20}
                               />
-                              <Field name="company" placeholder="Company" />
+                              <Field
+                                name="company"
+                                placeholder="Company"
+                                type="text"
+                              />
                             </div>
                           </div>
                           <div className={styles.signup_btn}>
