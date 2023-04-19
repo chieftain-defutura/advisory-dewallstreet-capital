@@ -71,7 +71,11 @@ const Advisory: React.FC = () => {
                                 width={20}
                                 height={20}
                               />
-                              <Field as="select" name="category">
+                              <Field
+                                as="select"
+                                name="category"
+                                className={styles.selectContent}
+                              >
                                 <option
                                   value=""
                                   style={{
