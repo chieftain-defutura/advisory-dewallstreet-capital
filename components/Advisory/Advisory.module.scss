@@ -41,14 +41,18 @@
 
       @media (max-width: 1024px) {
         font-size: 18px;
-        padding: 340px 50px 100px 50px;
+        padding: 300px 50px 100px 50px;
       }
       @media (max-width: 768px) {
         padding: 280px 50px 100px 50px;
         font-size: 16px;
       }
-      @media (max-width: 425px) {
-        padding: 280px 20px 100px 20px;
+
+      @media (max-width: 415px) {
+        padding: 470px 20px 100px 20px;
+      }
+      @media (max-width: 415px) {
+        padding: 370px 20px 100px 20px;
       }
     }
     .signup {
@@ -162,6 +166,9 @@
             font-family: var(--font-light);
             padding: 16px;
             width: 100%;
+          }
+          @media (max-width: 1024px) {
+            padding-bottom: 32px;
           }
         }
       }
